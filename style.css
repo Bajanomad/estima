@@ -51,12 +51,12 @@ a:hover{color:var(--gold);text-decoration-color:var(--gold)}
   font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:1px;
   color:var(--label-text);margin:6px 0 0;
 }
-.head-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
-.nav{margin-top:14px;border-top:1px solid var(--rule-dark);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center}
+.head-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:12px;text-align:center}
+.nav{margin-top:14px;border-top:1px solid var(--rule-dark);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:center}
 .nav a{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;color:var(--ink)}
 .nav a:hover{color:var(--gold)}
 .nav a[aria-current="page"]{border-bottom:2px solid var(--gold);color:#fff}
-.lang{margin-left:auto;font-size:13px;letter-spacing:1px}
+.lang{margin-left:22px;font-size:13px;letter-spacing:1px}
 .lang a{text-transform:none;letter-spacing:0;font-weight:400}
 .lang strong{color:var(--gold)}
 
