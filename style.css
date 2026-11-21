@@ -18,29 +18,25 @@
 html{margin:0;padding:0}
 body{
   margin:0;background:var(--paper);color:var(--ink);
-  background-image:radial-gradient(1px 1px at 25px 35px,#ffffff 50%,transparent 52%),radial-gradient(1px 1px at 75px 90px,#cdd8ff 50%,transparent 52%),radial-gradient(2px 2px at 130px 45px,#ffffff 50%,transparent 52%),radial-gradient(1px 1px at 180px 120px,#ffe9a8 50%,transparent 52%);
-  background-size:220px 160px;
   font-family:"Space Grotesk",Verdana,Arial,sans-serif;
   font-size:16px;line-height:1.55;
 }
-body::before,body::after{
-  content:"";position:fixed;inset:-80px 0;z-index:0;pointer-events:none;background-repeat:repeat;
-}
-body::before{
-  background-image:radial-gradient(1px 1px at 30px 40px,rgba(255,255,255,.9) 50%,transparent 52%),radial-gradient(1px 1px at 130px 90px,rgba(200,220,255,.7) 50%,transparent 52%),radial-gradient(1px 1px at 210px 160px,rgba(255,255,255,.8) 50%,transparent 52%);
-  background-size:260px 200px;opacity:.5;animation:drift 140s linear infinite alternate;
-}
-body::after{
-  background-image:radial-gradient(2px 2px at 60px 70px,rgba(255,255,255,.95) 50%,transparent 52%),radial-gradient(1px 1px at 300px 200px,rgba(255,240,200,.85) 50%,transparent 52%),radial-gradient(2px 2px at 180px 260px,rgba(190,215,255,.8) 50%,transparent 52%);
-  background-size:420px 320px;opacity:.75;animation:drift 90s linear infinite alternate-reverse;
-}
-@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,26px,0)}}
 a{color:var(--gold-soft);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
 a:hover{color:var(--gold);text-decoration-color:var(--gold)}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 
 /* Header */
-.site-head{border-bottom:1px solid var(--rule);padding:22px 0 14px;margin-bottom:26px}
+.site-head{border-bottom:1px solid var(--rule);padding:22px 0 14px;margin-bottom:26px;position:relative;overflow:hidden}
+.site-head::before,.site-foot::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    radial-gradient(90px 90px at 18% 30%,rgba(190,210,255,.13),transparent 70%),
+    radial-gradient(120px 120px at 78% 18%,rgba(255,233,168,.09),transparent 70%),
+    radial-gradient(70px 70px at 55% 72%,rgba(255,255,255,.09),transparent 70%),
+    radial-gradient(140px 140px at 92% 68%,rgba(157,180,255,.07),transparent 70%),
+    radial-gradient(56px 56px at 38% 12%,rgba(255,255,255,.07),transparent 70%);
+}
+.site-head .head-row,.site-head .nav,.site-foot h2,.site-foot .cols,.site-foot .foot-note{position:relative;z-index:1}
 .wordmark{
   font-family:Orbitron,Verdana,sans-serif;font-size:40px;letter-spacing:3px;
   font-weight:700;line-height:1;margin:0;color:#fff;
@@ -126,7 +122,7 @@ form.intake button{
 form.intake button:hover{color:var(--gold);border-color:var(--gold)}
 
 /* Footer */
-.site-foot{border-top:1px solid var(--rule);margin-top:40px;padding:20px 0 34px;font-size:14px;color:var(--ink-soft)}
+.site-foot{border-top:1px solid var(--rule);margin-top:40px;padding:20px 0 34px;font-size:14px;color:var(--ink-soft);position:relative;overflow:hidden}
 .site-foot h2{font-family:Orbitron,Verdana,sans-serif;font-size:15px;color:#fff;margin:0 0 8px}
 .site-foot .cols{display:flex;flex-wrap:wrap;gap:8px 48px}
 .site-foot ul{list-style:none;padding:0;margin:0}
