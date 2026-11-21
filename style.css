@@ -1,0 +1,116 @@
+/* ESTIMA: assessments and forecasts. Institutional stylesheet. */
+:root{
+  --paper:#F6F1E6;
+  --panel:#FFFDF6;
+  --ink:#152A44;
+  --ink-soft:#43536A;
+  --gold:#A67F1D;
+  --gold-soft:#C9A94E;
+  --rule:#D9CFB8;
+  --rule-dark:#B9AB8C;
+}
+*{box-sizing:border-box}
+html{margin:0;padding:0}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.55;
+}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold-soft);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-head{border-bottom:3px double var(--rule-dark);padding:22px 0 14px;margin-bottom:26px}
+.wordmark{
+  font-family:Georgia,"Times New Roman",serif;font-size:42px;letter-spacing:6px;
+  font-weight:700;line-height:1;margin:0;
+}
+.wordmark a{text-decoration:none;color:var(--ink)}
+.tagline{
+  font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:16px;
+  color:var(--ink-soft);margin:4px 0 0;
+}
+.head-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+.nav{margin-top:14px;border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center}
+.nav a{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600}
+.nav a:hover{color:var(--gold)}
+.nav a[aria-current="page"]{border-bottom:2px solid var(--gold)}
+.lang{margin-left:auto;font-size:13px;letter-spacing:1px}
+.lang a{text-transform:none;letter-spacing:0;font-weight:400}
+.lang strong{color:var(--gold)}
+
+/* Mission and boundary */
+.mission{font-family:Georgia,"Times New Roman",serif;font-size:24px;line-height:1.4;margin:6px 0 10px}
+.boundary{
+  font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+  border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+  padding:8px 0;margin:0 0 24px;color:var(--ink);
+}
+.boundary .dot{color:var(--gold)}
+
+/* Flagship slot */
+.flagship{border:1px solid var(--rule-dark);background:var(--panel);padding:20px 22px;margin-bottom:22px}
+.flagship .kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 8px}
+.flagship h2{font-family:Georgia,"Times New Roman",serif;font-size:26px;margin:0 0 8px;line-height:1.25}
+
+/* Ledger strip */
+.ledger-strip{border:1px solid var(--rule-dark);background:var(--panel);padding:16px 22px;margin-bottom:30px}
+.ledger-strip .counts{display:flex;flex-wrap:wrap;gap:10px 34px;margin:0 0 8px}
+.ledger-strip .count{display:flex;flex-direction:column}
+.ledger-strip .num{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;line-height:1}
+.ledger-strip .lab{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft)}
+.covenant{font-size:14px;font-style:italic;color:var(--ink-soft);margin:0}
+
+/* Sections */
+section{margin:0 0 30px}
+h2.sec{
+  font-family:Georgia,"Times New Roman",serif;font-size:21px;margin:0 0 10px;
+  border-bottom:1px solid var(--rule);padding-bottom:6px;
+}
+h3{font-family:Georgia,"Times New Roman",serif;font-size:17px;margin:18px 0 6px}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+.empty{
+  border:1px dashed var(--rule-dark);background:var(--panel);
+  padding:16px 20px;color:var(--ink-soft);font-size:15px;
+}
+.empty strong{color:var(--ink)}
+.small{font-size:14px;color:var(--ink-soft)}
+.label{font-weight:700}
+
+/* Tables */
+table{border-collapse:collapse;width:100%;margin:0 0 16px;background:var(--panel)}
+th,td{border:1px solid var(--rule);padding:8px 12px;text-align:left;font-size:15px;vertical-align:top}
+th{background:#EFE8D6;font-family:Georgia,"Times New Roman",serif;font-size:14px;letter-spacing:.5px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+
+/* Forms */
+form.intake{border:1px solid var(--rule-dark);background:var(--panel);padding:18px 22px;margin-bottom:16px}
+form.intake label{display:block;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;margin:12px 0 4px}
+form.intake label:first-child{margin-top:0}
+form.intake input[type="text"],form.intake input[type="email"],form.intake textarea{
+  width:100%;padding:9px 10px;border:1px solid var(--rule-dark);background:#fff;
+  font:inherit;font-size:15px;color:var(--ink);
+}
+form.intake textarea{min-height:120px}
+form.intake button{
+  margin-top:14px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);
+  padding:10px 22px;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;
+}
+form.intake button:hover{background:var(--gold);border-color:var(--gold)}
+
+/* Footer */
+.site-foot{border-top:3px double var(--rule-dark);margin-top:40px;padding:20px 0 34px;font-size:14px;color:var(--ink-soft)}
+.site-foot h2{font-family:Georgia,"Times New Roman",serif;font-size:16px;color:var(--ink);margin:0 0 8px}
+.site-foot .cols{display:flex;flex-wrap:wrap;gap:8px 48px}
+.site-foot ul{list-style:none;padding:0;margin:0}
+.site-foot li{margin-bottom:4px}
+.foot-note{margin-top:16px;border-top:1px solid var(--rule);padding-top:10px}
+
+@media (max-width:640px){
+  .wordmark{font-size:32px;letter-spacing:4px}
+  .mission{font-size:20px}
+  .ledger-strip .counts{gap:8px 22px}
+}
