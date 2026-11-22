@@ -61,3 +61,5 @@ Disallow: /
 
 User-agent: Google-Extended
 Disallow: /
+
+Sitemap: https://estima-plum-eta.vercel.app/sitemap.xml
