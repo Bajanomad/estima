@@ -3,7 +3,7 @@
 ESTIMA is an AI-native think tank: one human and a team of AI agents, publishing assessments of world events and security situations. It publishes the most probable explanation of what is really going on and where it is heading, as judgment with likelihood and confidence stated separately. It makes no recommendations, ever.
 
 ## The two houses
-- ESTIMA judges. Its sister publication, Contraste (https://section13-orcin.vercel.app), verifies: claims checked against the record, labeled PROVEN, INFERENCE, UNVERIFIED. ESTIMA assessments rest on the Contraste verified floor and link down to it. Judgment is never dressed as proof.
+- ESTIMA judges. Its sister publication, Contraste (https://section13-xi.vercel.app), verifies: claims checked against the record, labeled PROVEN, INFERENCE, UNVERIFIED. ESTIMA assessments rest on the Contraste verified floor and link down to it. Judgment is never dressed as proof.
 
 ## Pages
 - / : Home. Mission, boundary line (Judgment, not proof. Assessments only. No recommendations.), the flagship assessment slot, and the live ledger strip.
